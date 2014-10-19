@@ -108,7 +108,7 @@ hist(totalStepsModified$NumSteps, breaks=10, xlab=&quot;Total number of steps&qu
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
-<p>A new column is created and a value is assigned based on whether the day is a weekday or weekend after which a panel plot is used to determine whether there is any difference in patterns between weedays and weekends.</p>
+<p>A new column is created and a value is assigned based on whether the day is a weekday or weekend after which a panel plot is used to determine whether there is any difference in patterns between weekdays and weekends.</p>
 <pre class="r"><code>modifiedData$dayType=weekdays(as.Date(modifiedData$date))
 for (i in 1:nrow(modifiedData)){
   if (modifiedData$dayType[i]==&quot;Monday&quot;)

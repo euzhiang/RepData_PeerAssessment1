@@ -102,7 +102,7 @@ median(totalStepsModified$NumSteps)
 Both the new mean and median from the modified data is higher after inputing missing data using the estimates of the total daily number of steps.
 
 ## Are there differences in activity patterns between weekdays and weekends?
-A new column is created and a value is assigned based on whether the day is a weekday or weekend after which a panel plot is used to determine whether there is any difference in patterns between weedays and weekends.
+A new column is created and a value is assigned based on whether the day is a weekday or weekend after which a panel plot is used to determine whether there is any difference in patterns between weekdays and weekends.
 
 ```r
 modifiedData$dayType=weekdays(as.Date(modifiedData$date))
