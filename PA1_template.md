@@ -48,7 +48,7 @@ plot(averageSteps$Time, averageSteps$NumSteps, type="l", xlab="Time in minutes u
 
 ![plot of chunk unnamed-chunk-5](./PA1_template_files/figure-html/unnamed-chunk-5.png) 
 
-The maxinum number of steps and the time interval in which it occurs is
+The maximum number of steps and the time interval in which it occurs is
 
 ```r
 maxSteps<-max(averageSteps$NumSteps)
@@ -60,7 +60,7 @@ averageSteps[maxSteps==averageSteps$NumSteps,]
 ## 104  835    206.2
 ```
 ## Inputing missing values
-The missing values are filled in using the mean for that 5-minute interval.
+The missing values are filled in using the mean for that 5-minute interval based on the average values obtained in the previous section.
 
 ```r
 modifiedData<-data

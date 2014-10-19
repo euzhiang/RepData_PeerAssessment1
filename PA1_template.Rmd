@@ -36,13 +36,13 @@ averageSteps<-setNames(aggregate(data$steps, by=list(data$interval), FUN=mean, n
 plot(averageSteps$Time, averageSteps$NumSteps, type="l", xlab="Time in minutes using 5-min intervals", ylab="Average number of steps")
 ```
 
-The maxinum number of steps and the time interval in which it occurs is
+The maximum number of steps and the time interval in which it occurs is
 ```{r, echo=TRUE}
 maxSteps<-max(averageSteps$NumSteps)
 averageSteps[maxSteps==averageSteps$NumSteps,]
 ```
 ## Inputing missing values
-The missing values are filled in using the mean for that 5-minute interval.
+The missing values are filled in using the mean for that 5-minute interval based on the average values obtained in the previous section.
 ```{r, echo=TRUE}
 modifiedData<-data
 for (i in 1:nrow(modifiedData)){
